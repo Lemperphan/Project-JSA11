@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../ảnh/cac-mau-background-halloween-dep-nhat-3.jpg);
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>ul>li {
+    margin-left: 40px;
+}
+
+header ul>li>a {
+    text-decoration: none;
+    padding: 6px 15px;
+    font-size: 25px;
+    color:#ffffff;
+    border-radius: 20px;
+}
+header ul>li>a:hover{
+    background: #ecf0f1;
+    color: #d35400;
+}
