@@ -1,0 +1,48 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.159), rgba(0, 0, 0, 0.306)), url("https://cdn.mos.cms.futurecdn.net/TEq9sj6tMqaDDmeZ2XCoi5.jpg");
+    background-size: 1920px 1080px;
+    color: rgb(255, 162, 41);
+    
+}
+input {
+    font-size: 23px;
+    border-radius: 9px;
+    border: 2px rgb(255, 162, 41) solid;
+    width: 500px;
+    height: 40px;
+    background-color: rgba(255, 162, 41, 0);
+    color: rgb(251, 205, 146);
+}
+button {
+    margin: 25px 0px 0px 0px;
+    width: 300px;
+    height: 40px;
+    border: 2px solid rgb(255, 162, 41);
+    background-color: rgb(255, 162, 41);
+    border-radius: 9px;
+    color: white;
+    font-size: 23px;
+}
+button:active {
+    background-color: grey;
+    border: grey;
+    color: rgb(255, 162, 41);
+}
+.Sign_up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Name {
+    display: flex;
+}
+.name {
+    width: 257px;
+}
+.name input {
+    width: 243px;
+}
