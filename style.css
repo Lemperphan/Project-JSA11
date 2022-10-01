@@ -4,52 +4,63 @@
 }
 
 body {
-    min-height: 100vh;
-    margin: 0px;
-    padding: 0px;
     /* background-image: url(../ảnh/cac-mau-background-halloween-dep-nhat-3.jpg);
     background-size: cover; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
     font-family: 'Oswald', sans-serif;
+    background: url("https://bigdata-vn.com/wp-content/uploads/2021/10/Cac-mau-background-Halloween-dep-nhat.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
-    background-image: url(https://bigdata-vn.com/wp-content/uploads/2021/10/Cac-mau-background-Halloween-dep-nhat.jpg);
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 30px 100px;
+    height: 15vh;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
+    align-items: center;
+    
 }
 
-header>ul {
-    position:relative;
+nav {
+    margin: auto;
+    position: fixed;
+    width: 90vw;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #00000095;
+    border-radius: 15px;
+}
+
+nav>ul {
     list-style: none;
     display: flex;
 }
 
-header>ul>li {
+nav>ul>li {
     margin-left: 40px;
 }
 
-header ul>li>a {
+nav>ul>li>a {
     text-decoration: none;
     padding: 6px 15px;
     font-size: 25px;
     color:#ffffff;
     border-radius: 20px;
 }
-header ul>li>a:hover{
+nav>ul>li>a:hover{
     background: #ecf0f1;
     color: #d35400;
 }
 
-.img{
-    margin-left: 200px;
-    margin-top: 800px ;
-    padding: 0;
+.main_content {
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    margin: auto;
+    width: 90vw;
+    background-color: #0000008e;
+    color: rgb(201, 201, 201);
 }
