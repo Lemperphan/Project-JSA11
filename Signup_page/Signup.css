@@ -37,3 +37,12 @@ button:active {
     flex-direction: column;
     align-items: center;
 }
+.Name {
+    display: flex;
+}
+.name {
+    width: 257px;
+}
+.name input {
+    width: 243px;
+}
