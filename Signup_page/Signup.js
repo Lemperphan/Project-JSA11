@@ -30,5 +30,6 @@ function submit() {
             password : Pw.value,
         }
         window.localStorage.setItem("user_acc", JSON.stringify(user_acc));
+        window.location.href = "../Login_page/login.html"
     }
 }

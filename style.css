@@ -34,7 +34,11 @@ nav {
     background-color: #00000095;
     border-radius: 15px;
 }
-
+nav>.logo>img{
+    margin-top: 5px;
+    width: 70px;
+    border-radius: 60px;
+}
 nav>ul {
     list-style: none;
     display: flex;
@@ -55,10 +59,6 @@ nav>ul>li>a:hover{
     background: #ecf0f1;
     color: #d35400;
 }
-
-
-
-
 .main_content {
     border-radius: 15px;
     padding: 10px 20px 10px 20px;

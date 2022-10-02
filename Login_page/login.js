@@ -7,9 +7,13 @@ function submit() {
         alert('Please enter your email');
     }else if (password.length == 0) {
         alert('Please enter your Password');
-    }else {
+    }else if (email != user_acc.mail || password != user_acc.password){
+        alert("Your Email or Password are incorrect")
+    }
+    else {
         if (email == user_acc.mail && password == user_acc.password) {
             alert('Login successfully')
         }
     }
+    window.location.href = "../index.html"
 }
