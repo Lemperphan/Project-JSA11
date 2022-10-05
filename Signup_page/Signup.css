@@ -27,10 +27,22 @@ button {
     color: white;
     font-size: 23px;
 }
-button:active {
+button:hover {
     background-color: grey;
     border: grey;
     color: rgb(255, 162, 41);
+}
+button:active {
+    background-color: rgb(255, 162, 41);
+    border: rgb(255, 162, 41);
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: rgb(251, 205, 146);
+}
+a:hover {
+    color: gray;
 }
 .Sign_up {
     display: flex;
@@ -45,4 +57,17 @@ button:active {
 }
 .name input {
     width: 243px;
+}
+.return_homepage {
+    position: absolute;
+    left: 10vh;
+    top: 6vh;
+    width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid rgb(255, 162, 41);
+	border-bottom: 25px solid transparent;
+}
+.return_homepage:hover {
+    border-right: 50px solid gray;
 }
