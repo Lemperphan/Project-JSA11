@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -11,7 +12,7 @@ body {
     width: 100%;
     font-family: 'Oswald', sans-serif;
     background: url("https://bigdata-vn.com/wp-content/uploads/2021/10/Cac-mau-background-Halloween-dep-nhat.jpg");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -21,7 +22,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 nav {
@@ -34,11 +35,13 @@ nav {
     background-color: #00000095;
     border-radius: 15px;
 }
-nav>.logo>img{
+
+nav>.logo>img {
     margin-top: 5px;
     width: 70px;
     border-radius: 60px;
 }
+
 nav>ul {
     list-style: none;
     display: flex;
@@ -52,13 +55,15 @@ nav>ul>li>a {
     text-decoration: none;
     padding: 6px 15px;
     font-size: 25px;
-    color:#ffffff;
+    color: #ffffff;
     border-radius: 20px;
 }
-nav>ul>li>a:hover{
+
+nav>ul>li>a:hover {
     background: #ecf0f1;
     color: #d35400;
 }
+
 .main_content {
     border-radius: 15px;
     padding: 10px 20px 10px 20px;
@@ -68,3 +73,8 @@ nav>ul>li>a:hover{
     color: rgb(201, 201, 201);
 }
 
+/* css slides */
+
+
+
+  
