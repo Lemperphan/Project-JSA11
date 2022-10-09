@@ -13,7 +13,7 @@ function submit() {
     else {
         if (email == user_acc.mail && password == user_acc.password) {
             alert('Login successfully')
+            window.location.href = "../index.html"
         }
     }
-    window.location.href = "../index.html"
 }

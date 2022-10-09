@@ -37,7 +37,7 @@ nav {
 }
 
 nav>.logo>img {
-    margin-top: 5px;
+    margin-top: 8px;
     width: 70px;
     border-radius: 60px;
 }
@@ -48,15 +48,16 @@ nav>ul {
 }
 
 nav>ul>li {
-    margin-left: 40px;
+    margin-left: 50px;
+    align-items: center;
 }
 
 nav>ul>li>a {
     text-decoration: none;
-    padding: 6px 15px;
+    margin: auto;
     font-size: 25px;
-    color: #ffffff;
-    border-radius: 20px;
+    color:#ffffff;
+    border-radius: 12px;
 }
 
 nav>ul>li>a:hover {
@@ -73,8 +74,8 @@ nav>ul>li>a:hover {
     color: rgb(201, 201, 201);
 }
 
-/* css slides */
+.login_icon {
+    width: 45px;
+    border-radius: 13px;
+}
 
-
-
-  
