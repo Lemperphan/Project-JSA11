@@ -13,33 +13,73 @@
     <!-- Phần thanh navbar(đầu trang) -->
     <header>
         <nav>
-            <a href="../Project-JSA11/index.html" class="logo"><img src="https://png.pngtree.com/png-vector/20190927/ourlarge/pngtree-halloween-rounded-logo-png-image_1758439.jpg" alt=""></a>
+            <a href="../Project-JSA11/index.html" class="logo"><img
+                    src="https://png.pngtree.com/png-vector/20190927/ourlarge/pngtree-halloween-rounded-logo-png-image_1758439.jpg"
+                    alt=""></a>
             <ul class="navbar">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">For pet</a></li>
                 <li><a href="#">Couple</a></li>
                 <li><a href="#">Review</a></li>
-                <li><a href="Login_page/login.html"><img class="login_icon" src="https://bloganchoi.com/wp-content/uploads/2022/02/avatar-trang-y-nghia.jpeg" alt=""></a></li>
+                <li><a href="Login_page/login.html"><img class="login_icon"
+                            src="https://bloganchoi.com/wp-content/uploads/2022/02/avatar-trang-y-nghia.jpeg"
+                            alt=""></a></li>
             </ul>
-    </nav>
+        </nav>
     </header>
 
     <!-- phần thân trang  -->
 
     <div class="main_content">
         <!-- slide -->
-        
-    </div>
-
-    <!-- Hình ảnh mô tả -->
-    <!-- <div class="pic">
-        <div class="img"><img src="../ảnh/pet.jpg" alt="" width="424" />
-            <img src="../ảnh/family.jpg" alt="" />
+        <!-- img slider start -->
+        <div class="slider">
+            <div class="slides">
+                <!-- radio buttons start -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!-- radio buttons end -->
+                <!--------------->
+                <!-- slides img start -->
+                <div class="slide first">
+                    <img src="../ảnh/slide1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../ảnh/slide2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../ảnh/slide3.jpg" alt="">
+                </div>
+                <!-- slides img end  -->
+                <!---------------->
+                <!-- automatic navigation start -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn1"></div>
+                </div>
+                <!-- automatic navigation end  -->
+            </div>
+            <!------------->
+            <!-- manual navigation start -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!-- manual navigation end -->
         </div>
-       
-    </div> -->
+        <!-- img slider end  -->
+    </div>
+    <footer>
+        <div class="end">
+            <div class="customer-care"></div>
+            <div class="about-us"></div>
+            <div class="follow-us"></div>
+        </div>
+    </footer>
     <script src="app.js">
-
     </script>
 </body>
 
