@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
 * {
     box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     background: url("https://bigdata-vn.com/wp-content/uploads/2021/10/Cac-mau-background-Halloween-dep-nhat.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,7 +22,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 nav {
@@ -35,24 +34,23 @@ nav {
     border-radius: 15px;
 }
 
-nav>.logo>img {
+nav > .logo > img {
     margin-top: 8px;
     width: 70px;
     border-radius: 60px;
 }
 
-nav>ul {
+nav > ul {
     list-style: none;
     display: flex;
 }
 
-nav>ul>li {
+nav > ul > li {
     margin-left: 50px;
     align-items: center;
 }
 
-nav>ul>li>a {
-
+nav > ul > li > a {
     padding: 7px 7px;
     text-decoration: none;
     margin: auto;
@@ -61,7 +59,7 @@ nav>ul>li>a {
     border-radius: 12px;
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
     background: #ecf0f1;
     color: #d35400;
 }
@@ -91,7 +89,6 @@ nav>ul>li>a:hover {
     width: 500%;
     height: 500px;
     display: flex;
-
 }
 
 .slides input {
@@ -135,41 +132,41 @@ nav>ul>li>a:hover {
     background: #0984e3;
 }
 
-#radio1:checked~.first {
+#radio1:checked ~ .first {
     margin-left: 0;
 }
 
-#radio2:checked~.first {
+#radio2:checked ~ .first {
     margin-left: -20%;
 }
 
-#radio3:checked~.first {
+#radio3:checked ~ .first {
     margin-left: -40%;
 }
 /* css for automatic navigation */
-.navigation-auto{
+.navigation-auto {
     position: absolute;
-    display:flex;
-    width: 800%;
+    display: none;
+    /* width: 800%; */
     justify-content: center;
     margin-top: 460px;
 }
-.navigation-auto div{
-    border:2px solid #00cec9;
-    padding:5px;
+.navigation-auto div {
+    border: 2px solid #00cec9;
+    padding: 5px;
     border-radius: 10px;
-    transition:1s;
+    transition: 1s;
 }
 
-.navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child) {
     margin-right: 40px;
 }
-#radio1:checked~.navigation-auto .auto-btn1{
+#radio1:checked ~ .navigation-auto .auto-btn1 {
     background: #00cec9;
 }
-#radio2:checked~.navigation-auto .auto-btn2{
+#radio2:checked ~ .navigation-auto .auto-btn2 {
     background: #00cec9;
 }
-#radio3:checked~.navigation-auto .auto-btn3{
+#radio3:checked ~ .navigation-auto .auto-btn3 {
     background: #00cec9;
 }
