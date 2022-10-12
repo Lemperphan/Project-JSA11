@@ -27,11 +27,12 @@ header {
 nav {
     margin: auto;
     position: fixed;
-    width: 90vw;
+    width: 100vw;
     padding: 0px 100px;
     display: flex;
     justify-content: space-between;
-    border-radius: 15px;
+    
+    background-color: #d35400;
 }
 
 nav > .logo > img {
@@ -117,7 +118,7 @@ nav > ul > li > a:hover {
 }
 
 .manual-btn {
-    border: 2px solid #0984e3;
+    border: 2px solid #d35400;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -129,7 +130,7 @@ nav > ul > li > a:hover {
 }
 
 .manual-btn:hover {
-    background: #0984e3;
+    background: #d35400;
 }
 
 #radio1:checked ~ .first {
@@ -152,7 +153,7 @@ nav > ul > li > a:hover {
     margin-top: 460px;
 }
 .navigation-auto div {
-    border: 2px solid #00cec9;
+    border: 2px solid #d35400;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -162,11 +163,47 @@ nav > ul > li > a:hover {
     margin-right: 40px;
 }
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: #00cec9;
+    background: #d35400;
 }
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: #00cec9;
+    background: #d35400;
 }
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: #00cec9;
+    background: #d35400;
+}
+.end{
+    margin-top: 60px;
+    margin: none;
+    width: 100vw;
+    background-color: #f1c40f;
+    display: flex;
+    justify-content: space-around;
+}
+.customer-care{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.about-us{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.follow-us{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover{
+    color: #d35400;
+}
+h2{
+    font-size: 20px;
 }
