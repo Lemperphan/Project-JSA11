@@ -27,40 +27,42 @@ header {
 nav {
     margin: auto;
     position: fixed;
-    width: 100vw;
+    /* width: 100vw; */
+    border-radius: 20px ;
     padding: 0px 100px;
     display: flex;
     justify-content: space-between;
-    
+
     background-color: #d35400;
 }
 
-nav > .logo > img {
-    margin-top: 8px;
+nav>.logo>img {
+    margin-top: 10px;
     width: 70px;
     border-radius: 60px;
 }
 
-nav > ul {
+nav>ul {
     list-style: none;
     display: flex;
+    margin-top: 25px;
 }
 
-nav > ul > li {
+nav>ul>li {
     margin-left: 50px;
     align-items: center;
 }
 
-nav > ul > li > a {
-    padding: 7px 7px;
+nav>ul>li>a {
+    padding: 10px 10px;
     text-decoration: none;
     margin: auto;
     font-size: 25px;
     color: #ffffff;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
     background: #ecf0f1;
     color: #d35400;
 }
@@ -133,17 +135,18 @@ nav > ul > li > a:hover {
     background: #d35400;
 }
 
-#radio1:checked ~ .first {
+#radio1:checked~.first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first {
+#radio2:checked~.first {
     margin-left: -20%;
 }
 
-#radio3:checked ~ .first {
+#radio3:checked~.first {
     margin-left: -40%;
 }
+
 /* css for automatic navigation */
 .navigation-auto {
     position: absolute;
@@ -152,6 +155,7 @@ nav > ul > li > a:hover {
     justify-content: center;
     margin-top: 460px;
 }
+
 .navigation-auto div {
     border: 2px solid #d35400;
     padding: 5px;
@@ -162,16 +166,20 @@ nav > ul > li > a:hover {
 .navigation-auto div:not(:last-child) {
     margin-right: 40px;
 }
-#radio1:checked ~ .navigation-auto .auto-btn1 {
+
+#radio1:checked~.navigation-auto .auto-btn1 {
     background: #d35400;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2 {
+
+#radio2:checked~.navigation-auto .auto-btn2 {
     background: #d35400;
 }
-#radio3:checked ~ .navigation-auto .auto-btn3 {
+
+#radio3:checked~.navigation-auto .auto-btn3 {
     background: #d35400;
 }
-.end{
+
+.end {
     margin-top: 60px;
     margin: none;
     width: 100vw;
@@ -179,31 +187,37 @@ nav > ul > li > a:hover {
     display: flex;
     justify-content: space-around;
 }
-.customer-care{
+
+.customer-care {
     display: flex;
     flex-direction: column;
     font-size: 18px;
     margin-top: 30px;
 }
-.about-us{
+
+.about-us {
     display: flex;
     flex-direction: column;
     font-size: 18px;
     margin-top: 30px;
 }
-.follow-us{
+
+.follow-us {
     display: flex;
     flex-direction: column;
     font-size: 18px;
     margin-top: 30px;
 }
-a{
+
+a {
     text-decoration: none;
     color: #ffffff;
 }
-a:hover{
+
+a:hover {
     color: #d35400;
 }
+
 h2{
     font-size: 20px;
 }
