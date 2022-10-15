@@ -18,51 +18,59 @@ body {
 }
 
 header {
-    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 0;
 }
 
 nav {
+    min-width: 1000px;
     margin: auto;
-    position: fixed;
-    /* width: 100vw; */
-    border-radius: 20px ;
+    border-radius: 20px;
     padding: 0px 100px;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
     background-color: #d35400;
 }
 
-nav>.logo>img {
+nav > span {
+    color: white;
+    font-size: 30px;
+}
+
+nav > .logo > img {
     margin-top: 10px;
     width: 70px;
     border-radius: 60px;
 }
 
-nav>ul {
+nav > ul {
     list-style: none;
     display: flex;
-    margin-top: 25px;
+    margin: 0;
+    padding: 0;
 }
 
-nav>ul>li {
-    margin-left: 50px;
-    align-items: center;
+nav > ul > li {
+    display: flex;
+    gap: 20px;
 }
 
-nav>ul>li>a {
-    padding: 10px 10px;
+nav > ul > li > a {
+    display: block;
     text-decoration: none;
-    margin: auto;
-    font-size: 25px;
-    color: #ffffff;
-    border-radius: 10px;
+    /* width: 60px; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 10px;
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
     background: #ecf0f1;
     color: #d35400;
 }
@@ -83,9 +91,10 @@ nav>ul>li>a:hover {
 
 /* css slider */
 .slider {
-    width: 100vw;
-    height: 500px;
+    width: 100%;
+    height: 700px;
     overflow: hidden;
+    position: relative;
 }
 
 .slides {
@@ -105,18 +114,17 @@ nav>ul>li>a:hover {
 
 .slide img {
     width: 100vw;
-    height: 500px;
+    height: 700px;
     object-fit: cover;
 }
 
 /* css for manual */
 .navigation-manual {
     position: absolute;
-    width: 800px;
-    margin-top: -40px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-left: 350px;
+    bottom: 20px;
 }
 
 .manual-btn {
@@ -135,15 +143,15 @@ nav>ul>li>a:hover {
     background: #d35400;
 }
 
-#radio1:checked~.first {
+#radio1:checked ~ .first {
     margin-left: 0;
 }
 
-#radio2:checked~.first {
+#radio2:checked ~ .first {
     margin-left: -20%;
 }
 
-#radio3:checked~.first {
+#radio3:checked ~ .first {
     margin-left: -40%;
 }
 
@@ -167,46 +175,43 @@ nav>ul>li>a:hover {
     margin-right: 40px;
 }
 
-#radio1:checked~.navigation-auto .auto-btn1 {
+#radio1:checked ~ .navigation-auto .auto-btn1 {
     background: #d35400;
 }
 
-#radio2:checked~.navigation-auto .auto-btn2 {
+#radio2:checked ~ .navigation-auto .auto-btn2 {
     background: #d35400;
 }
 
-#radio3:checked~.navigation-auto .auto-btn3 {
+#radio3:checked ~ .navigation-auto .auto-btn3 {
     background: #d35400;
 }
 
 .end {
-    margin-top: 60px;
-    margin: none;
-    width: 100vw;
+    margin-top: 30px;
+    width: 100%;
     background-color: #f1c40f;
     display: flex;
     justify-content: space-around;
+    padding-bottom: 16px;
 }
 
 .customer-care {
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    margin-top: 30px;
 }
 
 .about-us {
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    margin-top: 30px;
 }
 
 .follow-us {
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    margin-top: 30px;
 }
 
 a {
@@ -218,6 +223,80 @@ a:hover {
     color: #d35400;
 }
 
-h2{
+h2 {
     font-size: 20px;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.product {
+    width: calc((100% - 60px) / 4);
+    border: 3px solid #070707;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    background-color: #f1c40f;
+    padding: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.product button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d35400;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cart {
+    border: 2px solid black;
+    background-color: #f1c40f;
+    color: #ffffff;
+    min-height: 300px;
+    padding: 30px 60px;
+}
+
+.cart .empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 40px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #070707;
+    margin-bottom: 20px;
+}
+
+.cart-item > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.total button {
+    float: right;
+    background-color: #f1c40f;
+    border-radius: 5px;
 }

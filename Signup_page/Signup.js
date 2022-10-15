@@ -1,34 +1,28 @@
-
-
 function submit() {
-    let Aname = document.getElementById('Aname')
-    var Fname = document.getElementById('Fname')
-    var Lname = document.getElementById('Lname')
-    var Mail = document.getElementById('mail')
-    var Pw = document.getElementById('Pw')
+    var email = document.getElementById("email");
+    var pw = document.getElementById("pw");
 
-    if (Aname.value.length == 0) {
-        alert('Please enter your account name');
-
-    } else if (Fname.value.length == 0) {
-        alert('Please enter your first name');
-    } else if (Lname.value.length == 0) {
-        alert('Please enter your last name');
-    }
-    else if (Mail.value.length == 0) {
-        alert('Please enter your email');
-    }
-    else if (Pw.value.length == 0) {
-        alert('Please enter password');
+    if (email.value.length == 0) {
+        alert("Please enter your email");
+    } else if (pw.value.length == 0) {
+        alert("Please enter password");
     } else {
-        const user_acc = {
-            acc_name: Aname.value,
-            first_name: Fname.value,
-            last_name: Lname.value,
-            mail: Mail.value,
-            password: Pw.value,
+        let listUser = JSON.parse(localStorage.getItem("list-user"));
+        for (let index = 0; index < listUser.length; index++) {
+            const element = listUser[index];
+            if (element.email == email.value) {
+                alert("Email used");
+                return;
+            }
         }
-        window.localStorage.setItem("user_acc", JSON.stringify(user_acc));
-        window.location.href = "../Login_page/login.html"
+
+        listUser.push({
+            email: email.value,
+            pw: pw.value,
+        });
+
+        localStorage.setItem("list-user", JSON.stringify(listUser));
+        localStorage.setItem("user", email.value);
+        window.location.href = "/index.html";
     }
 }

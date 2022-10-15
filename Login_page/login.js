@@ -1,19 +1,21 @@
 function submit() {
-    let email = document.getElementById('mail').value
-    let password = document.getElementById('Pw').value
-    let user_acc = JSON.parse(localStorage.getItem('user_acc')) 
-    console.log (user_acc.mail)
-    if (email.length == 0) {
-        alert('Please enter your email');
-    }else if (password.length == 0) {
-        alert('Please enter your Password');
-    }else if (email != user_acc.mail || password != user_acc.password){
-        alert("Your Email or Password are incorrect")
-    }
-    else {
-        if (email == user_acc.mail && password == user_acc.password) {
-            alert('Login successfully')
-            window.location.href = "../index.html"
+    var email = document.getElementById("email");
+    var pw = document.getElementById("pw");
+
+    if (email.value.length == 0) {
+        alert("Please enter your email");
+    } else if (pw.value.length == 0) {
+        alert("Please enter password");
+    } else {
+        let listUser = JSON.parse(localStorage.getItem("list-user"));
+        for (let index = 0; index < listUser.length; index++) {
+            const element = listUser[index];
+            if (element.email == email.value && element.pw == pw.value) {
+                localStorage.setItem("user", email.value);
+                window.location.href = "/index.html";
+                return;
+            }
         }
+        alert("Email or password is incorrect");
     }
 }

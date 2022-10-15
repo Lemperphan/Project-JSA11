@@ -35,51 +35,11 @@
     <!-- phần thân trang  -->
 
     <div class="main_content">
-        <!-- slide -->
-        <!-- img slider start -->
-        <div class="slider">
-            <div class="slides">
-                <!-- radio buttons start -->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <!-- radio buttons end -->
-                <!--------------->
-                <!-- slides img start -->
-                <div class="slide first">
-                    <img src="https://images.unsplash.com/photo-1508361001413-7a9dca21d08a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                        alt="">
-                </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1602814736315-13fe19927459?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                        alt="">
-                </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1634185233359-51820d45aa88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                        alt="">
-                </div>
-                <!-- slides img end  -->
-                <!---------------->
-                <!-- automatic navigation start -->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn1"></div>
-                </div>
-                <!-- automatic navigation end  -->
+        <div class="cart">
+            <div class="empty">
+                No item in cart
             </div>
-            <!------------->
-            <!-- manual navigation start -->
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-            </div>
-            <!-- manual navigation end -->
         </div>
-        <!-- img slider end  -->
-
-        <div id="products"></div>
     </div>
 
     <footer>
@@ -112,6 +72,35 @@
     <script src="auth.js"></script>
     <script src="products.js"></script>
     <script src="app.js"></script>
+    <script>
+        const cart = JSON.parse(localStorage.getItem("list-cart"));
+        if (cart) {
+            document.querySelector(".cart").innerHTML = "";
+            let total = 0;
+            for (let index = 0; index < cart.length; index++) {
+                const element = cart[index];
+                total += element.price;
+                document.querySelector(".cart").insertAdjacentHTML("beforeend", `
+                    <div class="cart-item">
+                        <img src="${element.image}">
+                        <h2>${element.name}</h2>
+                        <h3>${element.price}</h3>
+                    </div>
+                `);
+            }
+            document.querySelector(".cart").insertAdjacentHTML("beforeend", `
+                <div class="total">
+                    <h2 style="text-align: right">Total: ${total} $</h2>
+                    <button>Pay up</button>
+                </div>
+            `);
+            document.querySelector(".total button").addEventListener("click", () => {
+                localStorage.removeItem("list-cart");
+                alert("Thank you for your purchase");
+                window.location.href = "index.html";
+            });
+        }
+    </script>
 </body>
 
 </html>
