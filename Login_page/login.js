@@ -12,7 +12,7 @@ function submit() {
             const element = listUser[index];
             if (element.email == email.value && element.pw == pw.value) {
                 localStorage.setItem("user", email.value);
-                window.location.href = "/index.html";
+                window.location.href = "../index.html";
                 return;
             }
         }

@@ -23,6 +23,6 @@ function submit() {
 
         localStorage.setItem("list-user", JSON.stringify(listUser));
         localStorage.setItem("user", email.value);
-        window.location.href = "/index.html";
+        window.location.href = "../index.html";
     }
 }
